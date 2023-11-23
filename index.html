@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project RevoU - Hanun</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/logo-beach.png">
+</head>
+<body>
+    <audio src="assets/sound-beach.mp3" autoplay loop></audio>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Log In</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <div class="banner">
+            <img src="assets/kelingking-beach.jpg" id="slider" width="100%" height="30%">
+            <div class="judul">
+                <h1>Mau Liburan ke Bali?</h1>
+                <h3>Liburan Sama HAHA Travel Bali Yuk!</h3>
+            </div> 
+        </div>
+    </main>
+    <section id="about">
+        <div class="judul-about">
+            <h1>Tentang Kami</h1>
+            <h2>HAHA TRAVEL BALI</h2>
+            <h3>Menyediakan fasilitas liburan kamu dan keluarga secara lengkap dan menyenangkan dengan harga yang ramah dikantong!</h3>
+            <p>HAHA Travel Bali berdiri sejak tahun 2023. Tujuan kami memberikan pengalaman terbaik untuk anda dan keluarga yang ingin berlibur di Bali dengan aman, menyenagkan, dan terjangkau.</p>
+        </div>
+        <div class="fasilitas">
+            <h3>Fasilitas Liburan Oleh HAHA Travel Bali</h3>
+            <ul>
+                <li>Transportasi</li>
+                <li>Penginapan</li>
+                <li>Konsumsi Pada Saat Trip</li>
+                <li>Merchandise</li>
+            </ul>
+            <h4>Ingin tahu lebih lanjut mengenai HAHA Travel Bali? Langsung saja <a href="#contact">Hubungi Kami di sini!</a></h4>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="judul-contact">
+            <h1>Kontak Kami</h1>
+            <h2>Kontak HAHA TRAVEL BALI</h2>
+            <p>Hubungi kami melalui Sosial Media Kami di bawah ini!</p>
+            <p>Anda juga bisa Isi form di bawah ini dan Anda akan dihubungi oleh Tim HAHA Travel Bali</p>
+        </div>
+        <form action="" id="form-contact">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>: </th>
+                        <th><input type="text" placeholder="Nama" required></th>
+                    </tr> 
+                    <tr>
+                        <th>Email</th>
+                        <th>: </th>
+                        <th><input type="email" placeholder="Tulis Email kamu" required></th>
+                    </tr>
+                    <tr>
+                        <th>Nomor WhatsApp</th>
+                        <th>: </th>
+                        <th><input type="tel" pattern="^\d{10}$" placeholder="Nomor WhatsApp" title="Nomor HP/WA harus berjumlah minimal 10 angka dengan format 08xxx"required ></th>
+                    </tr>
+                    <tr>
+                        <th>Pesan</th>
+                        <th>: </th>
+                        <th><textarea rows="4" placeholder="Pesan"></textarea></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th><input type="submit" class="button"></th>
+                    </tr>
+                </thead>
+            </table>
+        </form>
+    </section>
+    <section id="login">
+        <div class="judul-login">Login</div>
+        <form action="" id="form-login">
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="email" placeholder="Masukkan Email Akun" title="Email menggunakan tanda '@' " required></th>
+                    </tr>
+                    <tr>
+                        <th><input type="password" placeholder="Masukkan Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Minimal 8 karakter kombinasi huruf besar, huruf kecil, angka, dan simbol." minlength="8" maxlength="20" placeholder="Masukkan Password Baru Anda" required></th>
+                    </tr>
+                    <tr>
+                        <td> <button class="button">Login</button> </td>
+                    </tr>
+                </thead>
+            </table>
+        </form>
+        <div class="judul-register">Belum Punya Akun? Daftar di sini</div>
+        <form action="" id="form-register">
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="text" placeholder="Masukkan Nama Akun" title="Masukkan Nama kamu" required></th>
+                    </tr>
+                    <tr>
+                        <th><input type="email" placeholder="Masukkan Email" title="Email menggunakan tanda '@'" required></th>
+                    </tr>
+                    <tr>
+                        <th><input type="password" placeholder="Masukkan Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Minimal 8 karakter kombinasi huruf besar, huruf kecil, angka, dan simbol." minlength="8" maxlength="20" placeholder="Masukkan Password Baru Anda" required></th>
+                    </tr>
+                    <tr>
+                        <th><input type="password" placeholder="Konfirmasi Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Konfirmasi Password harussama seperti password" minlength="8" maxlength="20" placeholder="Masukkan Password Baru Anda" required></th>
+                    </tr>
+                    <tr>
+                        <td> <button class="button">Daftar</button> </td>
+                    </tr>
+                </thead>
+            </table>
+        </form>
+    </section>
+    <footer class="copyright-footer">
+        <p>&copy; 2023. <b>HAHA Travel Bali.</b> All Rights Reserved.</p>
+    </footer>
+    <script src="js/script.js"> </script>
+</body>
+</html>
